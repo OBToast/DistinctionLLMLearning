@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_blue"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <!-- Header card -->
+
+        <!-- Info card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:background="#6FCF97"
+            android:backgroundTint="@color/button_blue"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <TextView
+                android:layout_width="347dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="AI Powered Help!"
+                android:textColor="@color/text_white"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <!-- Quick prompts title -->
+
+        <!-- Quick prompt buttons -->
+
+        <!-- Prompt input -->
+
+        <!-- Send button -->
+        <EditText
+            android:id="@+id/et_prompt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:background="#FFFFFF"
+            android:gravity="top|start"
+            android:hint="Type your prompt here..."
+            android:minHeight="120dp"
+            android:padding="14dp"
+            android:textColor="@color/text_dark"
+            android:textColorHint="#7A7A7A" />
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:backgroundTint="@color/button_green"
+            android:text="Send to AI"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <!-- Prompt label -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:gravity="center"
+            android:text="Prompt sent"
+            android:textColor="@color/text_dark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Prompt display -->
+        <TextView
+            android:id="@+id/tv_prompt_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:padding="14dp"
+            android:text="Prompt will appear here"
+            android:textColor="@color/text_dark"
+            android:textSize="13sp" />
+
+        <!-- Loading -->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="12dp"
+            android:visibility="gone" />
+
+        <!-- Response label -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:gravity="center"
+            android:text="Model response"
+            android:textColor="@color/text_dark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Response display -->
+        <TextView
+            android:id="@+id/tv_response"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="#FFFEFF"
+            android:gravity="center"
+            android:minHeight="180dp"
+            android:padding="14dp"
+            android:text="Response will appear here"
+            android:textColor="@color/text_dark"
+            android:textSize="14sp" />
+
+        <!-- Back button -->
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/button_green"
+            android:text="Back"
+            android:textColor="@color/text_white"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
+
